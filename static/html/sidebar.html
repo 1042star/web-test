@@ -89,3 +89,12 @@
     <li><a href="" class="download">Download</a></li>
     <li><a href="" class="article">Home</a></li>
 </ul>
+
+
+<script type="text/javascript">
+  $("#achievement").on("click",function(e){
+    e.preventDefault();
+    $("#content-result").load("static/html/achievement.html");
+    console.log("Achievement");
+  });
+</script>
