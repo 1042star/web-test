@@ -1,9 +1,10 @@
 var DataTable = {};
 
-function getAchievement() {
-	$("#content-result").load("static/html/achievement.html");
+$("#achievement").on("click",function(e){
+        e.preventDefault();
+        $("#content-result").load("static/html/achievement.html");
 	console.log("Achievement");
-}
+});
 
 function postAchievement() {
 	$.ajax({
