@@ -1,9 +1,9 @@
 var DataTable = {};
 
-$("#achievement").click(function(data, status){
+function getAchievement() {
 	$("#content-result").load("static/html/achievement.html");
 	console.log("Achievement");
-});
+}
 
 function postAchievement() {
 	$.ajax({
