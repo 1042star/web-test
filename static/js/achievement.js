@@ -1,6 +1,6 @@
 var DataTable = {};
 
-$.get("/achievement", function(data, status){
+$("#achievement").click(function(data, status){
 	$("#content-result").load("static/html/achievement.html");
 });
 
