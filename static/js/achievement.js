@@ -1,9 +1,8 @@
 var DataTable = {};
 
-$.ajax({
-	  type: "GET"
-	, url: "/achievement"
-}).load("static/html/achievement.html");
+$.get("/achievement", function(data, status){
+	$("#content-result").load("static/html/achievement.html");
+});
 
 function postAchievement() {
 	$.ajax({
