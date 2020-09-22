@@ -5,12 +5,12 @@
 <ul class="list-unstyled components">
     <p>메뉴</p>
 	<li>
-		<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">인물</a>
-		<ul class="list-unstyled components">
+		<a href="#characterSubmenu" data-toggle="collapse" aria-expanded="false">인물</a>
+		<ul class="collapse list-unstyled">
 			<li>인물목록</li>
 			<li>
 				<a href="#questionSubmenu" data-toggle="collapse" aria-expanded="false">설문단계</a>
-				<ul class="collapse list-unstyled">
+				<ul class="collapse list-unstyled" id="questionSubmenu">
 					<li>설문목록</li>
 					<li>초기무공</li>
 					<li>초기감오</li>
@@ -19,7 +19,7 @@
 			</li>
 			<li>
 				<a href="#npcSubmenu" data-toggle="collapse" aria-expanded="false">NPC</a>
-				<ul class="collapse list-unstyled">
+				<ul class="collapse list-unstyled" id="npcSubmenu">
 					<li>NPC 목록</li>
 					<li>대사</li>
 					<li>소지물품</li>
@@ -32,7 +32,7 @@
 	</li>
 	<li>
 		<a href="#nicknameSubmenu" data-toggle="collapse" aria-expanded="false">칭호</a>
-		<ul class="collapse list-unstyled">
+		<ul class="collapse list-unstyled" id="nicknameSubmenu">
 			<li>칭호목록</li>
 			<li>특수칭호</li>
 		</ul>
@@ -40,7 +40,7 @@
 	<li>감오</li>
 	<li>
 		<a href="#skillSubmenu" data-toggle="collapse" aria-expanded="false">무공</a>
-		<ul class="collapse list-unstyled">
+		<ul class="collapse list-unstyled" id="skillSubmenu">
 			<li>비급서</li>
 			<li>초식목록</li>
 			<li>ICON 노드</li>
@@ -53,10 +53,11 @@
 			<li>일반</li>
 			<li>
 				<a href="#forgeSubmenu" data-toggle="collapse" aria-expanded="false">생산</a>
-				<ul class="collapse list-unstyled">
+				<ul class="collapse list-unstyled" id="forgeSubmenu">
 					<li>제련</li>
-					<li><a href="#recipeSubmenu" data-toggle="collapse" aria-expanded="false">처방</a>
-						<ul class="collapse list-unstyled">
+					<li>
+						<a href="#recipeSubmenu" data-toggle="collapse" aria-expanded="false">처방</a>
+						<ul class="collapse list-unstyled" id="recipeSubmenu">
 							<li>제조법/설계도면</li>
 							<li>음식효과</li>
 						</ul>
@@ -68,14 +69,14 @@
 	<li>임무</li>
 	<li>
 		<a href="#achievementSubmenu" data-toggle="collapse" aria-expanded="false">성취/보상</a>
-		<ul class="collapse list-unstyled">
+		<ul class="collapse list-unstyled" id="achievementSubmenu">
 			<li>성취목록</li>
 			<li>ICON 노드</li>
 		</ul>
 	</li>
 	<li>
 		<a href="#mapSubmenu" data-toggle="collapse" aria-expanded="false">지역/지도</a>
-		<ul class="collapse list-unstyled">
+		<ul class="collapse list-unstyled" id="mapSubmenu">
 			<li>지역목록</li>
 			<li>마부</li>
 		</ul>
