@@ -48,19 +48,16 @@
 				$("#sidebar").load("static/html/sidebar.html");
 				$(".navbar").load("static/html/menubar.html");
 				
-				
-				$("#achievement").on("click",function(e){
-   				     e.preventDefault();
-        			     $("#content-result").load("static/html/achievement.html");
-				     console.log("Achievement");
-				});
-				
-				
 				$('#sidebarCollapse').on('click', function () {
 					$('#sidebar').toggleClass('active');
 					$(this).toggleClass('active');
 				});
 			});
+		 $("#achievement").on("click",function(e){
+   			e.preventDefault();
+        	        $("#content-result").load("static/html/achievement.html");
+		        console.log("Achievement");
+		});
          </script>
 	 
     </body>
